@@ -1,0 +1,23 @@
+<mat-sidenav-container class='app-pokedex'>
+  <mat-sidenav class='app-pokedex' #sidenav>
+    <button mat-flat-button (click)="sidenav.toggle()">
+      <a>
+        Retour
+      </a>
+    </button>
+    <div>pickachu</div>
+    <div>bulbizar</div>
+  </mat-sidenav>
+  <mat-sidenav class='app-pokedex' #sidenav2>
+    <button mat-flat-button (click)="sidenav2.toggle()">
+      <a>
+        Retour
+      </a>
+    </button>
+    <div>Aucun lol</div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <button mat-flat-button (click)="sidenav.toggle()">Pokedex</button>
+    <button mat-flat-button (click)="sidenav2.toggle()">Amis</button>
+  </mat-sidenav-content>
+</mat-sidenav-container>
